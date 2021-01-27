@@ -1,0 +1,232 @@
+header{
+    // background-color: brown;
+    // width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+
+    nav{
+        position: absolute;
+        bottom: 0%;
+    }
+
+    .site-nav{
+        position: absolute;
+    }
+    .site-nav.fixed{
+        position: fixed;
+        top: 0;
+    }
+
+    h1{
+        width: 30%;
+        position: absolute;
+        top: 8%;
+        left: 8%;
+    }
+    p{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -10000;
+    }
+    /*#first-view{
+        background: url(../img/home_firstview.png) no-repeat ;
+        width: 100%;
+        height: 100%;
+        margin: 0 0 0 auto;
+    }*/
+}
+
+
+
+
+main{
+    margin-top: 10%;
+    color: #707070;
+    position: relative;
+    overflow-x: hidden;
+
+    #txt{
+        h3{
+            font-family: "Ro本明朝Pr5";
+            font-size: 2.5em;
+            line-height: 1em;
+            margin-bottom: 5%;
+        span{
+                font-size:0.7em ;
+            }
+        }
+        p{
+            line-height: 2em;
+        }
+    }
+
+    #concept{
+        position: relative;
+        #txt{
+            position: absolute;
+            top: 5%;
+            right: 20%;
+            .container{
+                margin: 60% 0 0 100%;
+            }
+        }
+    }
+
+    .chocolate{
+        position: absolute;
+        top: 8%;
+        z-index: -1000;
+    }
+
+    #menu{
+        p:first-child{
+            position: absolute;
+            top: 25%;
+            right: 0;
+        }
+        p:nth-child(2){
+            position: absolute;
+            top: 35%;
+            left: 0;
+        }
+
+        #txt{
+            position: absolute;
+            top: 40%;
+            right: 0%;
+            width: 50%;
+        }
+
+        h3{
+            margin-bottom: 25%;
+        }
+    }
+
+    #gallery{
+        // position: absolute;
+        margin-top: 110%;
+        #txt{
+            position: absolute;
+            left: 3%;
+            text-align: left;
+            p{
+                margin-bottom: 20%;
+            }
+        }
+            .right{
+                text-align: right;
+            }
+        li{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    #access{
+        margin-top: -0.5%;
+
+        p img{
+            float: left;
+        }
+        #txt{
+            float: right;
+            width: 40%;
+            margin: 5% 3% 0 0;
+        }
+        .container{
+            margin-top: 20%;
+        }
+
+    }
+
+    /*botten*/
+    .container {
+        font-family: toppan-bunkyu-mincho-pr6n,serif;
+        font-weight: 400;
+        font-style: normal;
+        // text-align: center;
+        .btn-open {
+            display: inline-block;
+            width: 180px;
+            height:38px;
+            text-align: center;
+            background-color: #583330;
+            font-size: 1.4em;
+            // line-height: 52px;
+            color: #FFF;
+            border: 2px solid#583330;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .btn-open:after{
+            width: 100%;
+            height: 0;
+            content:"";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background : #FFF;
+            opacity: 0;
+            transform: translateX(-50%) translateY(-50%) rotate(45deg);
+            transition: .2s;
+            z-index: -1;
+        }
+        .btn-open:hover{
+            color: #583330;
+        }
+        .btn-open:hover:after{
+            height: 240%;
+            opacity: 1;
+        }
+        .btn-open:active:after{
+            height: 340%;
+            opacity: 1;
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    /* 480px以下に適用されるCSS（スマホ用） */
+    img{
+        max-width: 100%;
+    }
+
+    header{
+
+        .site-nav{
+            // display: none;
+            ul{
+                display: none;
+            }
+            h2{
+                margin: 0 auto;
+            }
+        }
+
+        h1{
+            width: 66%;
+        }
+
+        .hero{
+            position: relative;
+            height: 100vh;
+        }
+
+        .hero img {
+            position: absolute;
+            top: 0;
+            left: -72%;
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+            max-width: inherit;
+        }
+    }
+}
+

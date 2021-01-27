@@ -1,0 +1,181 @@
+// 共通スタイル
+.btn-gray{
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    background-color: #808a96;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    &:hover{
+        cursor: pointer;
+        opacity: 0.7;
+    }
+    a{
+        color: white;
+    }
+}
+// ヘッダー
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 80px;
+    h1{
+        font-size: 2em;
+        line-height: 80px;
+    }
+    p{
+        line-height: 80px;
+        margin-right: 20px;
+        a{
+            color:#969696;
+            text-decoration: underline;
+            :hover{
+                color: red;
+            }
+        }
+    }
+}
+#wrapper{
+    display: flex;
+    //background-color: gray;
+    width: 100%;
+}
+
+aside{
+    width: 20%;
+    height: 100vh;
+    //background-color: aqua;
+    nav{
+        li{
+            border: 1px solid #969696;
+            border-right: none;
+            a{
+                display: block;
+                color: black;
+                padding: 20px;
+            }
+            :hover{
+                background-color: #c5c5c5;
+                opacity: 0.5;
+            }
+        }
+        li + li{
+            border-top: none;
+        }
+    }
+}
+
+main{
+    width: 80%;
+    padding: 50px;
+    border-top: 1px #969696 solid;
+    border-left: 1px #969696 solid;
+    h2{
+        font-size: 2em;
+    }
+    //background-color: blueviolet;
+}
+
+
+
+// トップページ
+.index_main{
+    section{
+        padding: 30px;
+        li{
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            a{
+                color: #117ffd;
+            }
+            :hover{
+                color: #7fbafd;
+            }
+        }
+    }
+}
+
+.table{
+    text-align: center;
+    padding: 30px;
+    width: 90%;
+    table{
+        table-layout: fixed;
+        width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+        th{
+            color: white;
+            background-color: gray;
+            border-collapse: collapse;
+            border-spacing: 0;
+            padding: 5px;
+        }
+        td{
+            padding: 20px 0;
+        }
+    }
+}
+
+.news_table{
+
+}
+
+#form{
+    padding-top: 30px;
+    margin: 0 auto;
+    table{
+        th{
+            padding: 20px;
+        }
+        td{
+            padding: 20px;
+        }
+        .table-btn{
+            text-align: center;
+        }
+    }
+}
+/*フォーム*/
+input[type='text']{
+    width: 200px;
+    height: 25px;
+}
+select{
+    width: 200px;
+    height: 25px;
+}
+input[type='file']{
+    &:hover{
+        cursor: pointer;
+    }
+}
+input[type='submit']{
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    background-color: #117ffd;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    &:hover{
+        cursor: pointer;
+        opacity: 0.7;
+    }
+}
+
+
+/*確認画面*/
+#confirmation{
+    table{
+        tr{
+            th{
+                padding: 20px;
+                text-align: center;
+            }
+        }
+    }
+}

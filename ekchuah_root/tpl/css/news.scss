@@ -1,0 +1,30 @@
+nav{
+    // height: 95px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+main{
+    width: 960px;
+    margin: 10% auto;
+    color: #707070;
+    a{
+        color: #707070;
+    }
+    h3{
+        font-size: 2em;
+        margin: 5% 0;
+        font-family: "Ro本明朝Pr5";
+    }
+    li{
+        border-top: 1px solid #707070;
+        font-size: 1.2em;
+        padding: 3%;
+        padding-bottom: 8%;
+        width: 100%;
+        img{
+            float: right;
+        }
+    }
+}

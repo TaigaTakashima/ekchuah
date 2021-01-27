@@ -1,0 +1,188 @@
+@charset "UTF-8";
+.btn-gray {
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  background-color: #808a96;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+.btn-gray:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.btn-gray a {
+  color: white;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  height: 80px;
+}
+
+header h1 {
+  font-size: 2em;
+  line-height: 80px;
+}
+
+header p {
+  line-height: 80px;
+  margin-right: 20px;
+}
+
+header p a {
+  color: #969696;
+  text-decoration: underline;
+}
+
+header p a :hover {
+  color: red;
+}
+
+#wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+aside {
+  width: 20%;
+  height: 100vh;
+}
+
+aside nav li {
+  border: 1px solid #969696;
+  border-right: none;
+}
+
+aside nav li a {
+  display: block;
+  color: black;
+  padding: 20px;
+}
+
+aside nav li :hover {
+  background-color: #c5c5c5;
+  opacity: 0.5;
+}
+
+aside nav li + li {
+  border-top: none;
+}
+
+main {
+  width: 80%;
+  padding: 50px;
+  border-top: 1px #969696 solid;
+  border-left: 1px #969696 solid;
+}
+
+main h2 {
+  font-size: 2em;
+}
+
+.index_main section {
+  padding: 30px;
+}
+
+.index_main section li {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.index_main section li a {
+  color: #117ffd;
+}
+
+.index_main section li :hover {
+  color: #7fbafd;
+}
+
+.table {
+  text-align: center;
+  padding: 30px;
+  width: 90%;
+}
+
+.table table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table table th {
+  color: white;
+  background-color: gray;
+  border-collapse: collapse;
+  border-spacing: 0;
+  padding: 5px;
+}
+
+.table table td {
+  padding: 20px 0;
+}
+
+#form {
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+#form table th {
+  padding: 20px;
+}
+
+#form table td {
+  padding: 20px;
+}
+
+#form table .table-btn {
+  text-align: center;
+}
+
+/*フォーム*/
+input[type='text'] {
+  width: 200px;
+  height: 25px;
+}
+
+select {
+  width: 200px;
+  height: 25px;
+}
+
+input[type='file']:hover {
+  cursor: pointer;
+}
+
+input[type='submit'] {
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  background-color: #117ffd;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+input[type='submit']:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+/*確認画面*/
+#confirmation table tr th {
+  padding: 20px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

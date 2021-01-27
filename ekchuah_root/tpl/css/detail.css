@@ -1,0 +1,44 @@
+nav {
+  height: 90%;
+  width: 100%;
+  position: fixed;
+}
+
+main {
+  color: #707070;
+}
+
+main #firstview {
+  display: inline-block;
+  height: 100vh;
+  width: 100%;
+}
+
+main #firstview h3 {
+  font-size: 2em;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  display: inline-block;
+  margin-top: 10%;
+  width: 25%;
+}
+
+main #firstview .sam {
+  display: inline-block;
+  float: right;
+}
+
+main #firstview .prev {
+  display: inline-block;
+  position: absolute;
+  top: 20%;
+  left: 8%;
+}
+
+main #sentence {
+  width: 960px;
+  margin: 15% auto;
+  line-height: 2em;
+}
+/*# sourceMappingURL=detail.css.map */

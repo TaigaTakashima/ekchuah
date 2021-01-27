@@ -1,0 +1,229 @@
+@charset "UTF-8";
+header {
+  height: 100vh;
+  position: relative;
+  margin: 0;
+  /*#first-view{
+        background: url(../img/home_firstview.png) no-repeat ;
+        width: 100%;
+        height: 100%;
+        margin: 0 0 0 auto;
+    }*/
+}
+
+header nav {
+  position: absolute;
+  bottom: 0%;
+}
+
+header .site-nav {
+  position: absolute;
+}
+
+header .site-nav.fixed {
+  position: fixed;
+  top: 0;
+}
+
+header h1 {
+  width: 30%;
+  position: absolute;
+  top: 8%;
+  left: 8%;
+}
+
+header p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -10000;
+}
+
+main {
+  margin-top: 10%;
+  color: #707070;
+  position: relative;
+  overflow-x: hidden;
+  /*botten*/
+}
+
+main #txt h3 {
+  font-family: "Ro本明朝Pr5";
+  font-size: 2.5em;
+  line-height: 1em;
+  margin-bottom: 5%;
+}
+
+main #txt h3 span {
+  font-size: 0.7em;
+}
+
+main #txt p {
+  line-height: 2em;
+}
+
+main #concept {
+  position: relative;
+}
+
+main #concept #txt {
+  position: absolute;
+  top: 5%;
+  right: 20%;
+}
+
+main #concept #txt .container {
+  margin: 60% 0 0 100%;
+}
+
+main .chocolate {
+  position: absolute;
+  top: 8%;
+  z-index: -1000;
+}
+
+main #menu p:first-child {
+  position: absolute;
+  top: 25%;
+  right: 0;
+}
+
+main #menu p:nth-child(2) {
+  position: absolute;
+  top: 35%;
+  left: 0;
+}
+
+main #menu #txt {
+  position: absolute;
+  top: 40%;
+  right: 0%;
+  width: 50%;
+}
+
+main #menu h3 {
+  margin-bottom: 25%;
+}
+
+main #gallery {
+  margin-top: 110%;
+}
+
+main #gallery #txt {
+  position: absolute;
+  left: 3%;
+  text-align: left;
+}
+
+main #gallery #txt p {
+  margin-bottom: 20%;
+}
+
+main #gallery .right {
+  text-align: right;
+}
+
+main #gallery li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+main #access {
+  margin-top: -0.5%;
+}
+
+main #access p img {
+  float: left;
+}
+
+main #access #txt {
+  float: right;
+  width: 40%;
+  margin: 5% 3% 0 0;
+}
+
+main #access .container {
+  margin-top: 20%;
+}
+
+main .container {
+  font-family: toppan-bunkyu-mincho-pr6n,serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main .container .btn-open {
+  display: inline-block;
+  width: 180px;
+  height: 38px;
+  text-align: center;
+  background-color: #583330;
+  font-size: 1.4em;
+  color: #FFF;
+  border: 2px solid #583330;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+main .container .btn-open:after {
+  width: 100%;
+  height: 0;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #FFF;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+          transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -webkit-transition: .2s;
+  transition: .2s;
+  z-index: -1;
+}
+
+main .container .btn-open:hover {
+  color: #583330;
+}
+
+main .container .btn-open:hover:after {
+  height: 240%;
+  opacity: 1;
+}
+
+main .container .btn-open:active:after {
+  height: 340%;
+  opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+  /* 480px以下に適用されるCSS（スマホ用） */
+  img {
+    max-width: 100%;
+  }
+  header .site-nav ul {
+    display: none;
+  }
+  header .site-nav h2 {
+    margin: 0 auto;
+  }
+  header h1 {
+    width: 66%;
+  }
+  header .hero {
+    position: relative;
+    height: 100vh;
+  }
+  header .hero img {
+    position: absolute;
+    top: 0;
+    left: -72%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: inherit;
+  }
+}
+/*# sourceMappingURL=index.css.map */
