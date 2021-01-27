@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="tpl/css/reset.css">
+    <link rel="stylesheet" href="tpl/css/header.css">
+    <link rel="stylesheet" href="tpl/css/footer.css">
+    <link rel="stylesheet" href="tpl/css/news.css">
     <script type="text/javascript"src="//code.typesquare.com/static/ZDbTe4IzCko%253D/ts106f.js"charset="utf-8"></script>
     <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?5fc72d9d3b0841d0b8a51ef7e90393a3" charset="utf-8"></script>
     <title>Ek Chuah　エクチュア からほり「蔵」本店</title>
@@ -15,7 +15,7 @@
 <body>
     <header>
         <nav>
-            <h2><a href="index.php"><img src="img/logo_gnavi.png" alt="エクチュアのロゴ"></a></h2>
+            <h2><a href="index.php"><img src="tpl/img/logo_gnavi.png" alt="エクチュアのロゴ"></a></h2>
             <ul>
                 <li><a href="index.php">ホーム<br><span>Home</span></a></li>
                 <li><a href="concept.php">コンセプト<br><span>Concept</span></a></li>
@@ -30,12 +30,12 @@
         <h3>お知らせ</h3>
         <ul>
             <?php foreach ($news_list as $item):?>
-            <li><a href="detail.php?news_id=<?php echo $item['news_id']?>"><?php echo $item['title'];?><img src="img/details_icon.png" alt="詳しく見る"></a></li>
+            <li><a href="detail.php?news_id=<?php echo $item['news_id']?>"><?php echo $item['title'];?><img src="tpl/img/details_icon.png" alt="詳しく見る"></a></li>
             <?php endforeach;?>
         </ul>
     </main>
     <footer>
-        <h2 id="footer_inner"><img src="img/logo_footer.png" alt="エクチュアのロゴ"></h2>
+        <h2 id="footer_inner"><img src="tpl/img/logo_footer.png" alt="エクチュアのロゴ"></h2>
         <section>
             <address id="footer_inner">
                 〒542-0012<br>

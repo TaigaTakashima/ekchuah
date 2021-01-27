@@ -17,11 +17,3 @@ while ($row = mysqli_fetch_assoc($ret)) {
 
 require_once './tpl/news.php';
 ?>
-
-
-
-
-<?php foreach ($news_list as $item):?>
-<?php echo $item['title'];?>
-<?php echo $item['price'];?>
-<?php endforeach;?>

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="tpl/css/reset.css">
+    <link rel="stylesheet" href="tpl/css/header.css">
+    <link rel="stylesheet" href="tpl/css/footer.css">
+    <link rel="stylesheet" href="tpl/css/menu.css">
     <script type="text/javascript"src="//code.typesquare.com/static/ZDbTe4IzCko%253D/ts106f.js"charset="utf-8"></script>
     <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?5fc72d9d3b0841d0b8a51ef7e90393a3" charset="utf-8"></script>
     <title>Ek Chuah　エクチュア からほり「蔵」本店</title>

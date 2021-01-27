@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="tpl/css/reset.css">
+    <link rel="stylesheet" href="tpl/css/header.css">
+    <link rel="stylesheet" href="tpl/css/index.css">
+    <link rel="stylesheet" href="tpl/css/footer.css">
     <script src="js/jQuery-3.4.1.min.js"></script>
     <script type="text/javascript"src="//code.typesquare.com/static/ZDbTe4IzCko%253D/ts106f.js"charset="utf-8"></script>
     <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?5fc72d9d3b0841d0b8a51ef7e90393a3" charset="utf-8"></script>
@@ -18,10 +18,10 @@
     <header>
         <section id="first-view">
             <h1><img src="img/title_text.png" alt="Ek Chuah Chocolatia"></h1>
-            <p class="hero"><img src="img/home_firstview.png" alt="チョコレートケーキ"></p>
+            <p class="hero"><img src="tpl/img/home_firstview.png" alt="チョコレートケーキ"></p>
         </section>
         <nav class="site-nav">
-            <h2><a href="index.php"><img src="img/logo_gnavi.png" alt="エクチュアのロゴ"></a></h2>
+            <h2><a href="index.php"><img src="tpl/img/logo_gnavi.png" alt="エクチュアのロゴ"></a></h2>
             <ul>
                 <li><a href="index.php">ホーム<br><span>Home</span></a></li>
                 <li><a href="concept.php">コンセプト<br><span>Concept</span></a></li>

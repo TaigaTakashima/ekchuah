@@ -16,9 +16,3 @@ while ($row = mysqli_fetch_assoc($ret)) {
 
 require_once './tpl/menu.php';
 ?>
-
-
-<?php foreach ($menu_list as $item):?>
-<?php echo $item['menu_name'];?>
-<?php echo $item['price'];?>
-<?php endforeach;?>
