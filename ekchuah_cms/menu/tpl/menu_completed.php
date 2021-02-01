@@ -22,7 +22,7 @@
                 <ul>
                     <li><?php echo $_SESSION['menu_name'];?></li>
                     <li><?php echo $_SESSION['menu_price'];?></li>
-                    <li><?php echo $_SESSION['category'];?></li>
+                    <li><?php echo $_SESSION['category_name'];?></li>
                     <li><?php echo $_SESSION['endDate'];?></li>
                 </ul>
             </section>

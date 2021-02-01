@@ -5,6 +5,8 @@ $_SESSION['menu_name'] = $_POST['menu_name'];
 $_SESSION['menu_price'] = $_POST['menu_price'];
 $_SESSION['category'] = $_POST['category'];
 $_SESSION['endDate'] = $_POST['endDate'];
+$_SESSION['category_name'] = $_POST['category_name'];
+
 
 
 //画像の保存・画像名を最新のnews_idにするため

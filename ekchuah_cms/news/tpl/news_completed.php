@@ -17,7 +17,7 @@
             <?php include '../nav.html';?>
         </aside>
         <main>
-            <h2>ニュース編集完了</h2>
+            <h2>登録しました</h2>
             <section>
                 <ul>
                     <li><?php echo $title;?></li>

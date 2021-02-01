@@ -6,6 +6,7 @@ $menu_price = $_SESSION['menu_price'];
 $category = $_SESSION['category'];
 $endDate = $_SESSION['endDate'];
 
+
 $link = mysqli_connect('localhost', 'root', '', 'ekchuah');
 mysqli_set_charset($link, 'utf8');
 //メニュー登録

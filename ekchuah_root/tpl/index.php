@@ -17,7 +17,7 @@
 <body>
     <header>
         <section id="first-view">
-            <h1><img src="img/title_text.png" alt="Ek Chuah Chocolatia"></h1>
+            <h1><img src="tpl/img/title_text.png" alt="Ek Chuah Chocolatia"></h1>
             <p class="hero"><img src="tpl/img/home_firstview.png" alt="チョコレートケーキ"></p>
         </section>
         <nav class="site-nav">
@@ -34,7 +34,7 @@
     </header>
     <main>
         <section id="concept">
-            <p><img src="img/Concept01.png" alt="日本家屋風のお店"></p>
+            <p><img src="tpl/img/Concept01.png" alt="日本家屋風のお店"></p>
                 <div id="txt">
                 <h3>コンセプト<br><span>Concept</span></h3>
                 <p>
@@ -46,10 +46,10 @@
                 </div><!-- /container -->
                 </div><!--/txt-->
         </section><!--/concept-->
-        <p class="chocolate"><img src="img/chocolate.png" alt=""></p>
+        <p class="chocolate"><img src="tpl/img/chocolate.png" alt=""></p>
         <section id="menu">
-            <p><img src="img/menu_01.png" alt="チョコレートケーキ"></p>
-            <p><img src="img/menu_02.png" alt="チョコミントパフェ"></p>
+            <p><img src="tpl/img/menu_01.png" alt="チョコレートケーキ"></p>
+            <p><img src="tpl/img/menu_02.png" alt="チョコミントパフェ"></p>
             <div id="txt">
                 <h3>メニュー<br><span>Menu</span></h3>
                 <p>
@@ -73,7 +73,7 @@
                     <a href="#" class="btn-open">More</a>
                 </div><!-- /container -->
             </div><!--/txt-->
-            <p class="right"><img src="img/gallery00.png" alt=""></p>
+            <p class="right"><img src="tpl/img/gallery00.png" alt=""></p>
             <ul>
                 <li><img src="img/gallery01.png" alt="チョコレートケーキ"></li>
                 <li><img src="img/gallery02.png" alt="店内の様子"></li>
@@ -81,7 +81,7 @@
             </ul>
         </section><!--gallery-->
         <section id="access">
-            <p><img src="img/access.png" alt=""></p>
+            <p><img src="tpl/img/access.png" alt=""></p>
             <div id="txt">
                 <h3>アクセス<br><span>Access</span></h3>
                 <p>
@@ -97,7 +97,7 @@
     </section><!--access-->
     </main>
     <footer>
-        <h2 id="footer_inner"><img src="img/logo_footer.png" alt="エクチュアのロゴ"></h2>
+        <h2 id="footer_inner"><img src="tpl/img/logo_footer.png" alt="エクチュアのロゴ"></h2>
         <section>
             <address id="footer_inner">
                 〒542-0012<br>

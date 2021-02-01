@@ -17,12 +17,23 @@
             <?php include '../nav.html';?>
         </aside>
         <main>
-            <section>
+            <section id="confirmation">
+                <h2>こちらで登録してよろしいですか？</h2>
                 <form action="news_completed.php">
-                    <li><?php echo $_SESSION['title'];?></li>
-                    <li><?php echo $_SESSION['content'];?></li>
-                    <input type="Submit" value="戻る" name="back">
-                    <input type="Submit" value="登録">
+                    <table>
+                        <tr>
+                            <th>タイトル</th>
+                            <td><?php echo $_SESSION['title'];?></td>
+                        </tr>
+                        <tr>
+                            <th>内容</th>
+                            <td><?php echo $_SESSION['content'];?></td>
+                        </tr>
+                        <tr>
+                            <td><input type="Submit" value="登録"></td>
+                            <td><a href="../news_input.php"><button class="btn-gray" type="button">戻る</button></a></td>
+                        </tr>
+                    </table>
                 </form>
             </section>
         </main>

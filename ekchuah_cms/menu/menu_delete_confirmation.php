@@ -19,6 +19,14 @@ foreach($menu_list as $item){
     $_SESSION['menu_price'] = $item['price'];
     $category_id = $item['category_id'];
     $_SESSION['endDate'] = $item['end_date'];
+    $_SESSION['display'] = $item['display'];
+}
+
+//非公開・公開を変数に格納
+if($_SESSION['display'] == 0){
+    $display = "非公開";
+}else{
+    $display = "公開";
 }
 
 //カテゴリーの情報を変数に格納

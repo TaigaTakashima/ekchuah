@@ -15,6 +15,15 @@ $_SESSION['news_id'] = $_GET['news_id'];
 foreach($news_list as $item){
     $_SESSION['title'] = $item['title'];
     $_SESSION['content'] = $item['content'];
+    $_SESSION['display'] = $item['display'];
 }
+
+//非公開・公開を変数に格納
+if($_SESSION['display'] == 0){
+    $display = "非公開";
+}else{
+    $display = "公開";
+}
+
 require_once './tpl/news_delete_confirmation.php';
 ?>

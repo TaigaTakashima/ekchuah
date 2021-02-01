@@ -15,7 +15,7 @@
 <body>
     <header>
         <nav>
-            <h2><a href="index.php"><img src="img/logo_gnavi.png" alt="エクチュアのロゴ"></a></h2>
+            <h2><a href="index.php"><img src="tpl/img/logo_gnavi.png" alt="エクチュアのロゴ"></a></h2>
             <ul>
                 <li><a href="index.php">ホーム<br><span>Home</span></a></li>
                 <li><a href="concept.php">コンセプト<br><span>Concept</span></a></li>
@@ -32,13 +32,13 @@
                 季節限定のメニューを取り揃えて、<br>
                 お待ちしております。</p>
             <h3>メニュー</h3>
-            <img src="img/menu_firstview.png" alt="チョコミントパフェ">
+            <img src="tpl/img/menu_firstview.png" alt="チョコミントパフェ">
         </section>
         <section id="menu">
             <ul>
                 <?php foreach ($menu_list as $item):?>
                 <li>
-                    <img src="img/menu_-1.png" alt="">
+                    <img src="tpl/img/menu_-1.png" alt="">
                     <p><?php echo $item['menu_name'];?></p>
                     <p><?php echo $item['price'];?></p>
                 </li>
@@ -47,7 +47,7 @@
         </section>
     </main>
     <footer>
-        <h2 id="footer_inner"><img src="img/logo_footer.png" alt="エクチュアのロゴ"></h2>
+        <h2 id="footer_inner"><img src="tpl/img/logo_footer.png" alt="エクチュアのロゴ"></h2>
         <section>
             <address id="footer_inner">
                 〒542-0012<br>

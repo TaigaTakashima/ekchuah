@@ -21,7 +21,7 @@ mysqli_set_charset($link, 'utf8');
 
 //メニュー登録
 if (isset($_SESSION['title'])) {
-    $sql = "INSERT INTO news(title,content) VALUES ('$title','$content')";
+    $sql = "INSERT INTO news (title,content) VALUES ('$title','$content')";
     mysqli_query($link, $sql);
     mysqli_close($link);
 }else{

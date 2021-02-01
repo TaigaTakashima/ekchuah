@@ -31,7 +31,7 @@
                         </tr>
                         <tr>
                             <th>カテゴリー</th>
-                            <td><?php echo $_SESSION['category'];?></td>
+                            <td><?php echo $_SESSION['category_name'];?></td>
                         </tr>
                         <tr>
                             <th>終了日</th>

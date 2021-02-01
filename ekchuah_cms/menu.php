@@ -23,6 +23,7 @@
                     <li><a href="menu/menu_input.php">メニュー情報追加</a></li>
                     <li><a href="menu/menu_list.php">メニュー情報一覧</a></li>
                     <li><a href="category/category_input.php">カテゴリ情報追加</a></li>
+                    <li><a href="category/category_list.php">カテゴリ情報一覧</a></li>
                 </ul>
             </section>
         </main>

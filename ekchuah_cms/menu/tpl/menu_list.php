@@ -33,11 +33,11 @@
                     <tr>
                         <td><?php echo $item['menu_name'];?></td>
                         <td><?php echo $item['price'];?></td>
-                        <td><?php echo $item['category_id'];?></td>
+                        <td><?php echo $item['category_name'];?></td>
                         <td><?php echo date('Y年n月d日',strtotime($item['releas_date']));?></td>
                         <td><?php echo date('Y年n月d日',strtotime($item['end_date']));?></td>
                         <td><a href="menu_edit.php?menu_id=<?php echo $item['menu_id'];?>">編集</a></td>
-                        <td><a href="menu_delete_confirmation.php?menu_id=<?php echo $item['menu_id'];?>">削除</a></td>
+                        <td><a href="menu_delete_confirmation.php?menu_id=<?php echo $item['menu_id'];?>"><?php echo ($item['display'] == 1)?'非公開':'公開';?></a></td>
                     </tr>
                     <?php endforeach;?>
                 </table>

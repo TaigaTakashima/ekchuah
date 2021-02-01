@@ -22,7 +22,7 @@
                     <li><?php echo $_SESSION['title'];?></li>
                     <li><?php echo $_SESSION['content'];?></li>
                     <input type="Submit" value="戻る" name="back">
-                    <input type="Submit" value="削除">
+                    <input type="Submit" value="<?php echo $display;?>">
                 </form>
             </section>
         </main>

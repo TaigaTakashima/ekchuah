@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="././../css/reset.css">
     <link rel="stylesheet" href="././../css/style.css">
-    <title>ニュース情報削除完了 | サイト管理システム</title>
+    <title>ニュース更新完了 | サイト管理システム</title>
 </head>
 <body>
     <header>
@@ -17,7 +17,7 @@
             <?php include '../nav.html';?>
         </aside>
         <main>
-            <h2>ニュース削除完了</h2>
+            <h2>ニュース更新完了</h2>
             <section>
                 <ul>
                     <li><?php echo $title;?></li>

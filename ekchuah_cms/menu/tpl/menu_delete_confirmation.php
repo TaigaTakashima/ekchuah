@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="././../css/reset.css">
     <link rel="stylesheet" href="././../css/style.css">
-    <title>メニュー削除確認 | サイト管理システム</title>
+    <title>メニュー更新確認 | サイト管理システム</title>
 </head>
 <body>
     <header>
@@ -24,7 +24,7 @@
                     <li><?php echo $_SESSION['category'];?></li>
                     <li><?php echo $_SESSION['endDate'];?></li>
                     <input type="Submit" value="戻る" name="back">
-                    <input type="Submit" value="削除">
+                    <input type="Submit" value="<?php echo $display;?>">
                 </form>
             </section>
         </main>

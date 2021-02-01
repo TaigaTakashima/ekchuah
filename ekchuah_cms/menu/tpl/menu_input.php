@@ -51,6 +51,8 @@
                     <td><a href="../menu.php"><button class="btn-gray" type="button">戻る</button></a></td>
                 </tr>
             </table>
+            <input type="hidden" name="category_name" value="<?php echo $category["category_name"]?>">
+            </form>
         </section>
     </main>
 </body>

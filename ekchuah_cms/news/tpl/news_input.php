@@ -32,11 +32,9 @@
                     <th>画像</th>
                     <td><input type="file" name="upload_file"></td>
                 </tr>
-                <tr>
-                    <th>
+                <tr class="table-btn">
                         <td><input type="Submit" value="登録"></td>
                         <td><a href="../news.php"><button class="btn-gray" type="button">戻る</button></a></td>
-                    </th>
                 </tr>
             </table>
             </form>

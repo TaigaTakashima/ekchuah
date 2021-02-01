@@ -33,7 +33,7 @@
                         <td><?php echo $item['content'];?></td>
                         <td><?php echo date('Y年n月d日',strtotime($item['datetime']));?></td>
                         <td><a href="news_edit.php?news_id=<?php echo $item['news_id'];?>">編集</a></td>
-                        <td><a href="news_delete_confirmation.php?news_id=<?php echo $item['news_id'];?>">削除</a></td>
+                        <td><a href="news_delete_confirmation.php?news_id=<?php echo $item['news_id'];?>"><?php echo ($item['display'] == 1)?'非公開':'公開';?></a></td>
                     </tr>
                     <?php endforeach;?>
                 </table>

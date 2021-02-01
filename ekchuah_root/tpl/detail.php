@@ -15,7 +15,7 @@
 <body>
     <header>
         <nav>
-            <h2><a href="index.php"><img src="img/logo_gnavi.png" alt="エクチュアのロゴ"></a></h2>
+            <h2><a href="index.php"><img src="tpl/img/logo_gnavi.png" alt="エクチュアのロゴ"></a></h2>
             <ul>
                 <li><a href="index.php">ホーム<br><span>Home</span></a></li>
                 <li><a href="concept.php">コンセプト<br><span>Concept</span></a></li>
@@ -44,7 +44,7 @@
 
     </main>
     <footer>
-        <h2 id="footer_inner"><img src="img/logo_footer.png" alt="エクチュアのロゴ"></h2>
+        <h2 id="footer_inner"><img src="tpl/img/logo_footer.png" alt="エクチュアのロゴ"></h2>
         <section>
             <address id="footer_inner">
                 〒542-0012<br>
