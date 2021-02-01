@@ -29,13 +29,7 @@ if (isset($_SESSION['title'])) {
 }
 
 //画像をtmpフォルダからimagesフォルダに移動
-//ファイルに同じ名前があるかチェック（２回目の上書き保存をしないため）
-if( file_exists('./images/'.$news_id.'.jpg') ){
-    //存在する場合
-}else{
-    //リネーム処理
-    rename('tmp/'.$news_id.'.jpg', 'images/'.$news_id.'.jpg');
-}
+rename('./tmp/'.$news_id.'.jpg' , './images/'.$news_id.'.jpg');
 
 require_once './tpl/news_completed.php';
 ?>

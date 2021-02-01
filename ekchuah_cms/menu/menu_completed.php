@@ -19,13 +19,7 @@ if (isset($_SESSION['menu_name'])) {
 }
 
 //画像をtmpフォルダからimagesフォルダに移動
-//ファイルに同じ名前があるかチェック（２回目の上書き保存をしないため）
-if( file_exists('./images/'.$menu_id.'.jpg') ){
-    //存在する場合
-}else{
-    //リネーム処理
-    rename('tmp/'.$menu_id.'.jpg', 'images/'.$menu_id.'.jpg');
-}
+rename('./tmp/'.$menu_id.'.jpg' , './images/'.$menu_id.'.jpg');
 
 require_once './tpl/menu_completed.php';
 ?>

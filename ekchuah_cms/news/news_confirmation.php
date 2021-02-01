@@ -19,8 +19,7 @@ $_SESSION['news_id']++;
 
 //tmpフォルダに画像を一時的保存
 $upload_file = $_FILES['upload_file'];
-$_SESSION['extension'] = substr($upload_file['name'] , strrpos($upload_file['name'] , ".") +1);
-move_uploaded_file($upload_file['tmp_name'] , 'tmp/'.$_SESSION['news_id'].'.'.$_SESSION['extension']);
+move_uploaded_file($upload_file['tmp_name'] , 'tmp/'.$_SESSION['news_id'].'.jpg');
 
 require_once './tpl/news_confirmation.php';
 ?>

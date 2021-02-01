@@ -25,9 +25,7 @@ $_SESSION['menu_id']++;
 
 //tmpフォルダに画像を一時的保存
 $upload_file = $_FILES['upload_file'];
-
 move_uploaded_file($upload_file['tmp_name'] , 'tmp/'.$_SESSION['menu_id'].'.jpg');
-
 
 require_once './tpl/menu_confirmation.php';
 ?>
