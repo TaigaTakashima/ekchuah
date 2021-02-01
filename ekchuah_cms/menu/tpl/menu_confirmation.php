@@ -39,7 +39,7 @@
                         </tr>
                         <tr>
                             <td><input type="Submit" value="登録"></td>
-                            <td><a href="../menu_input.php"><button class="btn-gray" type="button">戻る</button></a></td>
+                            <td><a href="menu_input.php"><button class="btn-gray" type="button">戻る</button></a></td>
                         </tr>
                     </table>
                 </form>

@@ -18,18 +18,22 @@
     <main>
         <h2>カテゴリー編集</h2>
         <section id="form">
-            <form action="category_complete.php" method="GET">
-            <dl>
-                <dt>
-                    カテゴリー名
-                </dt
-                <?php foreach($category_list as $item): ?>>
-                <dd>
-                    <input type="text" name="category_name" value="<?php echo $item['menu_name'];?>">
-                </dd>
-                <?php endforeach;?>
-            </dl>
-                <input type="Submit" value="登録">
+            <form action="category_completed.php" method="GET">
+            <table>
+                <tr>
+                    <th>カテゴリー名</th>
+                    <?php foreach($category_list as $item): ?>
+                        <td><input type="text" name="category_name" value="<?php echo $item['category_name'];?>"></td>
+                        <input type="hidden" name="category_id" value="<?php echo $item['category_id'];?>">
+                    <?php endforeach;?>
+
+                </tr>
+                <tr class="table-btn">
+                    <td><input type="Submit" value="登録"></td>
+                    <td><a href="category_list.php"><button class="btn-gray" type="button">戻る</button></a></td>
+                </tr>
+            </table>
+            <input type="hidden" name="edit">
             </form>
         </section>
     </main>

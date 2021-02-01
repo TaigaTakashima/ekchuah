@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="././../css/reset.css">
     <link rel="stylesheet" href="././../css/style.css">
-    <title>ニュース情報編集完了 | サイト管理システム</title>
+    <title>カテゴリ情報登録完了 | サイト管理システム</title>
 </head>
 <body>
     <header>
@@ -20,9 +20,8 @@
             <h2>登録しました</h2>
             <section>
                 <ul>
-                    <li><?php echo $title;?></li>
-                    <li><?php echo $content;?></li>
-                    <li><a href="news_list.php"><button class="btn-gray" type="button">戻る</button></a></li>
+                    <li><?php echo $_GET['category_name'];?></li>
+                    <li><a href="category_list.php"><button class="btn-gray" type="button">戻る</button></a></li>
                 </ul>
             </section>
         </main>

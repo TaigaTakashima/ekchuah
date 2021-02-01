@@ -9,6 +9,6 @@ while ($row = mysqli_fetch_assoc($ret)) {
     $category_list[] = $row;
 }
 
-require_once './tpl/menu_edit.php';
+require_once './tpl/category_edit.php';
 ?>
 
