@@ -1,11 +1,14 @@
 <?php
-session_start();
+
+//確認画面でも戻るを押した場合の変数の格納
 $title = "";
 $content = "";
-if(isset($_SESSION['back_flag']) && $_SESSION['back_flag'] == 1){
+
+if(isset($_GET['back'])){
+    //フォームの値を取得、値をsessionに格納
+    session_start();
     $title = $_SESSION['title'];
     $content = $_SESSION['content'];
-    $_SESSION['back_flag'] = 0;
 }
 
 require_once 'tpl/news_input.php';

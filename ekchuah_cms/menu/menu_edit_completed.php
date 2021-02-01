@@ -11,10 +11,19 @@ mysqli_set_charset($link, 'utf8');
 if (isset($_POST['menu_name'])) {
     $sql = "UPDATE menu SET menu_name='".$menu_name."', price=".$menu_price.", category_id=".$category.", releas_date=releas_date, end_date='".$endDate."' WHERE menu_id=".$menu_id;
     mysqli_query($link, $sql);
-    mysqli_close($link);
 }else{
     echo '失敗';
 }
+
+//category_nameをDBから取得
+$sql = "SELECT * FROM category WHERE category_id=".$category;
+$ret = mysqli_query($link,$sql);
+foreach($ret as $row){
+    $category_name= 
+    $row['category_name'];
+}
+
+
 
 //画像をimagesフォルダに移動
 //tmpフォルダに画像を一時的保存

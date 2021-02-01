@@ -22,7 +22,7 @@
                 <ul>
                     <li><?php echo $menu_name;?></li>
                     <li><?php echo $menu_price;?></li>
-                    <li><?php echo $category;?></li>
+                    <li><?php echo $category_name;?></li>
                     <li><?php echo $endDate;?></li>
                     <li><a href="menu_list.php"><button class="btn-gray" type="button">戻る</button></a></li>
                 </ul>

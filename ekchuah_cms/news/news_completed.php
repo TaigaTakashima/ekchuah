@@ -3,8 +3,6 @@ session_start();
 $title = $_SESSION['title'];
 $content = $_SESSION['content'];
 $news_id = $_SESSION['news_id'];
-$extension = $_SESSION['extension'];
-
 
 //戻るボタン押した場合
 if(isset($_GET['back'])){

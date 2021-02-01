@@ -5,8 +5,6 @@ $_SESSION['menu_name'] = $_POST['menu_name'];
 $_SESSION['menu_price'] = $_POST['menu_price'];
 $_SESSION['category'] = $_POST['category'];
 $_SESSION['endDate'] = $_POST['endDate'];
-$_SESSION['category_name'] = $_POST['category_name'];
-
 
 
 //画像の保存・画像名を最新のnews_idにするため
@@ -22,6 +20,14 @@ foreach($ret as $row){
 //news_idに＋１
 $_SESSION['menu_id']++;
 
+
+//category_nameをDBから取得
+$sql = "SELECT * FROM category WHERE category_id=".$_SESSION['category'];
+$ret = mysqli_query($link,$sql);
+foreach($ret as $row){
+    $_SESSION['category_name'] = 
+    $row['category_name'];
+}
 
 //tmpフォルダに画像を一時的保存
 $upload_file = $_FILES['upload_file'];
