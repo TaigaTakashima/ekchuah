@@ -16,6 +16,7 @@ if(isset($_GET['back'])){
     $menu_price = $_SESSION['menu_price'];
     $category = $_SESSION['category'];
     $endDate = $_SESSION['endDate'];
+    unlink('tmp/'.$_SESSION['menu_id'].'.jpg');
 }
 
 //selectにカテゴリーを表示

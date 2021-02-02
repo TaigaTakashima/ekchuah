@@ -9,6 +9,7 @@ if(isset($_GET['back'])){
     session_start();
     $title = $_SESSION['title'];
     $content = $_SESSION['content'];
+    unlink('tmp/'.$_SESSION['news_id'].'.jpg');
 }
 
 require_once 'tpl/news_input.php';
