@@ -3,7 +3,11 @@ session_start();
 //フォームの値を取得、値をsessionに格納
 $_SESSION['menu_name'] = $_POST['menu_name'];
 $_SESSION['menu_price'] = $_POST['menu_price'];
-$_SESSION['category'] = $_POST['category'];
+if(isset($_POST['category'])){
+    $_SESSION['category'] = $_POST['category'];
+}else{
+    $_SESSION['category'] = 0;
+}
 $_SESSION['endDate'] = $_POST['endDate'];
 
 
@@ -27,6 +31,10 @@ $ret = mysqli_query($link,$sql);
 foreach($ret as $row){
     $_SESSION['category_name'] = 
     $row['category_name'];
+}
+
+if($_SESSION['category'] == 0){
+    $_SESSION['category_name'] = "未選択";
 }
 
 //tmpフォルダに画像を一時的保存

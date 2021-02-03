@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="././../css/reset.css">
     <link rel="stylesheet" href="././../css/style.css">
-    <title>カテゴリ情報登録完了 | サイト管理システム</title>
+    <title>カテゴリ情報<?php echo ($reg == 1)?'登録':'削除';?>完了 | サイト管理システム</title>
 </head>
 <body>
     <header>
@@ -17,7 +17,7 @@
             <?php include '../nav.html';?>
         </aside>
         <main>
-            <h2>登録しました</h2>
+            <h2><?php echo ($reg == 1)?'登録しました':'削除しました';?></h2>
             <section>
                 <ul>
                     <li><?php echo $_GET['category_name'];?></li>

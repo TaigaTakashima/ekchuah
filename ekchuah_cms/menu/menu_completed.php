@@ -19,7 +19,9 @@ if (isset($_SESSION['menu_name'])) {
 }
 
 //画像をtmpフォルダからimagesフォルダに移動
-rename('./tmp/'.$menu_id.'.jpg' , './images/'.$menu_id.'.jpg');
+if(file_exists('./tmp/'.$menu_id.'.jpg')){
+    rename('./tmp/'.$menu_id.'.jpg' , './images/'.$menu_id.'.jpg');
+}
 
 require_once './tpl/menu_completed.php';
 ?>

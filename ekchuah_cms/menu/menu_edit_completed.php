@@ -2,7 +2,12 @@
 $menu_id = $_POST['menu_id'];
 $menu_name = $_POST['menu_name'];
 $menu_price = $_POST['menu_price'];
-$category = $_POST['category'];
+if(isset($_POST['category'])){
+    $category = $_POST['category'];
+}else{
+    $category = 0;
+}
+
 $endDate = $_POST['endDate'];
 
 $link = mysqli_connect('localhost', 'root', '', 'ekchuah');
@@ -21,6 +26,9 @@ $ret = mysqli_query($link,$sql);
 foreach($ret as $row){
     $category_name= 
     $row['category_name'];
+}
+if(isset($category_name)==false){
+    $category_name = "未選択";
 }
 
 

@@ -32,6 +32,7 @@
                     <th>カテゴリー</th>
                     <td>
                         <select name="category">
+                        <option disabled selected value>未選択</option>
                             <?php foreach($category_list as $item): ?>
                                 <?php if($item["category_id"] == $category):?>
                                     <option value="<?php echo $item["category_id"]?>" selected><?php echo $item["category_name"];?></option>

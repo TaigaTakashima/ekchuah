@@ -25,13 +25,15 @@
                         <th></th>
                         <th></th>
                     </tr>
+                    <?php if(isset($category_list)==true):?>
                     <?php foreach ($category_list as $item):?>
                     <tr>
                         <td><?php echo $item['category_name'];?></td>
                         <td><a href="category_edit.php?category_id=<?php echo $item['category_id'];?>">編集</a></td>
-                        <td><a href="">削除</a></td>
+                        <td><a href="category_delete.php?category_id=<?php echo $item['category_id'];?>">削除</a></td>
                     </tr>
                     <?php endforeach;?>
+                    <?php endif;?>
                 </table>
             </section>
         </main>

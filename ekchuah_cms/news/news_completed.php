@@ -26,8 +26,12 @@ if (isset($_SESSION['title'])) {
     echo '失敗';
 }
 
+
 //画像をtmpフォルダからimagesフォルダに移動
-rename('./tmp/'.$news_id.'.jpg' , './images/'.$news_id.'.jpg');
+if(file_exists('./tmp/'.$news_id.'.jpg')){
+    rename('./tmp/'.$news_id.'.jpg' , './images/'.$news_id.'.jpg');
+}
+
 
 require_once './tpl/news_completed.php';
 ?>

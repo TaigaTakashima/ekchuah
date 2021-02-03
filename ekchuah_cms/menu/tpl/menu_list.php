@@ -29,17 +29,23 @@
                         <th></th>
                         <th></th>
                     </tr>
+                    <?php if(isset($menu_list)==true):?>
                     <?php foreach ($menu_list as $item):?>
                     <tr>
                         <td><?php echo $item['menu_name'];?></td>
                         <td><?php echo $item['price'];?></td>
-                        <td><?php echo $item['category_name'];?></td>
+                        <?php if($item['category_id']==0):?>
+                            <td>未選択</td>
+                        <?php else:?>
+                            <td><?php echo $item['category_name'];?></td>
+                        <?php endif;?>
                         <td><?php echo date('Y年n月d日',strtotime($item['releas_date']));?></td>
                         <td><?php echo date('Y年n月d日',strtotime($item['end_date']));?></td>
                         <td><a href="menu_edit.php?menu_id=<?php echo $item['menu_id'];?>">編集</a></td>
                         <td><a href="menu_delete_confirmation.php?menu_id=<?php echo $item['menu_id'];?>"><?php echo ($item['display'] == 1)?'非公開':'公開';?></a></td>
                     </tr>
                     <?php endforeach;?>
+                    <?php endif;?>
                 </table>
             </section>
         </main>
