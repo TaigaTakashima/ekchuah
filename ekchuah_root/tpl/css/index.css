@@ -16,11 +16,11 @@ header nav {
   bottom: 0%;
 }
 
-header .site-nav {
+header .gnav {
   position: absolute;
 }
 
-header .site-nav.fixed {
+header .gnav.fixed {
   position: fixed;
   top: 0;
 }
@@ -32,7 +32,7 @@ header h1 {
   left: 8%;
 }
 
-header p {
+header .hero {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -107,6 +107,9 @@ main #menu h3 {
 
 main #gallery {
   margin-top: 110%;
+  /* ------------------------------
+loopSlider
+------------------------------ */
 }
 
 main #gallery #txt {
@@ -123,10 +126,58 @@ main #gallery .right {
   text-align: right;
 }
 
-main #gallery li {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
+main #gallery .loopSliderWrap {
+  top: 0;
+  left: 0;
+  height: 300px;
+  overflow: hidden;
+  position: absolute;
+}
+
+main #gallery .loopSliderWrap:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+main #gallery .loopSlider {
+  margin: 0 auto;
+  width: 100%;
+  height: 300px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+main #gallery .loopSlider ul {
+  height: 300px;
+  float: left;
+  overflow: hidden;
+}
+
+main #gallery .loopSlider ul li {
+  width: 300px;
+  height: 300px;
+  float: left;
+  overflow: hidden;
+}
+
+main #gallery .loopSlider ul li img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  main #gallery .loopSliderWrap,
+  main #gallery .loopSlider,
+  main #gallery .loopSlider ul {
+    height: 100px;
+  }
+  main #gallery .loopSlider ul li {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 main #access {
@@ -202,11 +253,20 @@ main .container .btn-open:active:after {
   img {
     max-width: 100%;
   }
-  header .site-nav ul {
+  /* firstview */
+  header .logo_bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: url(../img/background_gnavi.png);
+    padding: 4% 0;
+  }
+  header .gnav {
     display: none;
   }
-  header .site-nav h2 {
-    margin: 0 auto;
+  header .gnav h2 {
+    margin: -20px auto;
   }
   header h1 {
     width: 66%;
@@ -224,6 +284,90 @@ main .container .btn-open:active:after {
     min-width: 100%;
     min-height: 100%;
     max-width: inherit;
+    -o-object-fit: cover;
+       object-fit: cover;
+    /* この一行を追加するだけ！ */
+  }
+  main {
+    margin: 0;
+    /*concept*/
+    /*menu*/
+  }
+  main #txt h3 {
+    font-size: 2em;
+  }
+  main #concept {
+    position: relative;
+    margin-bottom: 100%;
+  }
+  main #concept img {
+    width: 134px;
+    height: 360px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    /* この一行を追加するだけ！ */
+  }
+  main #concept #txt {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    width: 57%;
+  }
+  main #concept #txt .container {
+    margin: 15% 0 0 0;
+  }
+  main .chocolate {
+    top: 14%;
+  }
+  main #menu p:first-child {
+    width: 90%;
+    top: 28%;
+  }
+  main #menu p:nth-child(2) {
+    position: absolute;
+    top: 34%;
+    left: 0;
+    width: 40%;
+  }
+  main #menu #txt {
+    position: absolute;
+    top: 43%;
+    left: 10%;
+    width: 220%;
+  }
+  main #menu #txt h3 {
+    margin-bottom: 18%;
+  }
+  main #gallery {
+    margin-top: 291%;
+  }
+  main #gallery #txt {
+    left: 39%;
+  }
+  main #gallery #txt p {
+    margin-bottom: 10%;
+  }
+  main #gallery .right {
+    position: relative;
+    text-align: left;
+  }
+  main #gallery .right img {
+    width: 134px;
+    height: 360px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    /* この一行を追加するだけ！ */
+  }
+  main #access p img {
+    float: none;
+  }
+  main #access #txt {
+    width: 90%;
+    float: none;
+    margin: 3% auto;
+  }
+  main #access .container {
+    margin: 5% 0;
   }
 }
 /*# sourceMappingURL=index.css.map */

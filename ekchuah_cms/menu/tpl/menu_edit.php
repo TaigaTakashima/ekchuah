@@ -18,50 +18,48 @@
     <main>
         <h2>メニュー編集</h2>
         <section id="form">
-        <form action="menu_edit_completed.php" method="POST" enctype="multipart/form-data">
+            <form action="menu_edit_completed.php" method="POST" enctype="multipart/form-data">
             <?php foreach($menu_list as $item): ?>
-            <dl>
-                <dt>
-                    商品名
-                </dt>
-                <dd>
-                    <input type="text" name="menu_name" value="<?php echo $item['menu_name'];?>">
-                </dd>
-                <dt>
-                    値段
-                </dt>
-                <dd>
-                    <input type="text" name="menu_price" value="<?php echo $item['price'];?>">
-                </dd>
-                <dt>
-                    カテゴリー
-                </dt>
-                <dd>
-                    <select name="category">
-                        <?php foreach($category_list as $category):?>
-                            <?php if($item["category_id"] == $category['category_id']):?>
-                                <option value="<?php echo $category["category_id"]?>" selected><?php echo $category["category_name"]?></option>
-                            <?php else:?>
-                                <option value="<?php echo $category["category_id"]?>"><?php echo $category["category_name"]?></option>
+            <table>
+                <tr>
+                    <th>商品名</th>
+                    <td><input type="text" name="menu_name" value="<?php echo $item['menu_name'];?>"></td>
+                </tr>
+                <tr>
+                    <th>価格</th>
+                    <td><input type="text" name="menu_price" value="<?php echo $item['price'];?>"></td>
+                </tr>
+                <tr>
+                    <th>カテゴリー</th>
+                    <td>
+                        <select name="category">
+                            <?php if($item["category_id"] == 0):?>
+                            <option value="0" disabled selected>未選択</option>
                             <?php endif;?>
-                        <?php endforeach; ?>
-                    </select>
-                </dd>
-                <dt>
-                    終了日
-                </dt>
-                <dd>
-                    <input type="date" name="endDate" value="<?php echo $item['end_date'];?>">
-                </dd>
-                <dt>
-                    画像
-                </dt>
-                <dd>
-                    <input type="file" name="upload_file">
-                </dd>
-            </dl>
+                            <?php foreach($category_list as $category):?>
+                                <?php if($item["category_id"] == $category['category_id']):?>
+                                    <option value="<?php echo $category["category_id"]?>" selected><?php echo $category["category_name"]?></option>
+                                <?php else:?>
+                                    <option value="<?php echo $category["category_id"]?>"><?php echo $category["category_name"]?></option>
+                                <?php endif;?>
+                            <?php endforeach; ?>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>終了日</th>
+                    <td><input type="date" name="endDate" value="<?php echo $item['end_date'];?>"></td>
+                </tr>
+                <tr>
+                    <th>画像</th>
+                    <td><input type="file" name="upload_file"></td>
+                </tr>
+                <tr class="table-btn">
+                    <td><input type="Submit" value="登録"></td>
+                    <td><a href="menu_list.php"><button class="btn-gray" type="button">戻る</button></a></td>
+                </tr>
+            </table>
             <input type="hidden" name="menu_id" value="<?php echo $item['menu_id'];?>">
-            <input type="Submit" value="登録">
             <?php endforeach; ?>  
             </form>
         </section>

@@ -22,6 +22,7 @@
                 <ul>
                     <li><?php echo $title;?></li>
                     <li><?php echo $content;?></li>
+                    <li><a href="news_list.php"><button class="btn-gray" type="button">戻る</button></a></li>
                 </ul>
             </section>
         </main>

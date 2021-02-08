@@ -27,7 +27,8 @@
                         <th></th>
                         <th></th>
                     </tr>
-                    <?php foreach ($menu_list as $item):?>
+                    <?php if(isset($news_list)==true):?>
+                    <?php foreach ($news_list as $item):?>
                     <tr>
                         <td><?php echo $item['title'];?></td>
                         <td><?php echo $item['content'];?></td>
@@ -36,6 +37,7 @@
                         <td><a href="news_delete_confirmation.php?news_id=<?php echo $item['news_id'];?>"><?php echo ($item['display'] == 1)?'非公開':'公開';?></a></td>
                     </tr>
                     <?php endforeach;?>
+                    <?php endif;?>
                 </table>
             </section>
         </main>

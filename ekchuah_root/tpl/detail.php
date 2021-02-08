@@ -15,14 +15,14 @@
 <body>
     <header>
         <nav>
-            <h2><a href="index.php"><img src="tpl/img/logo_gnavi.png" alt="エクチュアのロゴ"></a></h2>
-            <ul>
-                <li><a href="index.php">ホーム<br><span>Home</span></a></li>
-                <li><a href="concept.php">コンセプト<br><span>Concept</span></a></li>
-                <li><a href="news.php">ニュース<br><span>News</span></a></li>
-                <li><a href="menu.php">メニュー<br><span>Menu</span></a></li>
-                <li><a href="gallary.php">ギャラリー<br><span>Gallery</span></a></li>
-                <li><a href="access.php">アクセス<br><span>Access</span></a></li>
+            <h2 ><a href="./index.html"><img src="tpl/img/logo_gnavi.png" alt="エクチュアのロゴ"></a></h2>
+            <ul class="gnav__menu">
+                <li class="gnav__menu__item"><a href="./index.php">ホーム<br><span>Home</span></a></li>
+                <li class="gnav__menu__item"><a href="./concept.php">コンセプト<br><span>Concept</span></a></li>
+                <li class="gnav__menu__item"><a href="./news.php">ニュース<br><span>News</span></a></li>
+                <li class="gnav__menu__item"><a href="./menu.php">メニュー<br><span>Menu</span></a></li>
+                <li class="gnav__menu__item"><a href="./gallery.php">ギャラリー<br><span>Gallery</span></a></li>
+                <li class="gnav__menu__item"><a href="./access.php">アクセス<br><span>Access</span></a></li>
             </ul>
         </nav>
     </header>

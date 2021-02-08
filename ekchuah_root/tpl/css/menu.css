@@ -41,6 +41,10 @@ main #firstview img {
   float: right;
 }
 
+main #firstview .deco {
+  display: none;
+}
+
 main ul {
   text-align: center;
 }
@@ -49,5 +53,56 @@ main li {
   display: inline-block;
   text-align: left;
   margin: 10% 2%;
+}
+
+@media screen and (max-width: 480px) {
+  /* 480px以下に適用されるCSS（スマホ用） */
+  img {
+    max-width: 100%;
+  }
+  main #firstview {
+    position: relative;
+  }
+  main #firstview img {
+    width: 215px;
+    height: 489px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    float: none;
+    position: absolute;
+    left: 0px;
+    top: 20%;
+    z-index: 0;
+  }
+  main #firstview h3 {
+    font-size: 2em;
+    margin: 0;
+    position: absolute;
+    right: 2%;
+    top: 20%;
+  }
+  main #firstview .txt {
+    float: right;
+    font-size: 1em;
+    margin: 48% 0% 0% 20%;
+    line-height: 1.8em;
+    padding: 0 17% 10% 0;
+  }
+  main #firstview .deco {
+    display: block;
+    float: right;
+    font-size: 1.2em;
+    margin: 0 10% 0 0;
+    line-height: 1.8em;
+    padding-left: 19%;
+    -webkit-writing-mode: unset;
+    border-top: solid 1px;
+    text-align: right;
+  }
+  main #menu li img {
+    -webkit-box-shadow: 0 0 4px #999;
+            box-shadow: 0 0 4px #999;
+    border: 10px solid #fff;
+  }
 }
 /*# sourceMappingURL=menu.css.map */

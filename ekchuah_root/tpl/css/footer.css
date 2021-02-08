@@ -1,3 +1,4 @@
+@charset "UTF-8";
 footer {
   background: url(../img/background_gnavi.png);
   color: #fff;
@@ -13,5 +14,18 @@ footer #footer_inner {
 footer .copy {
   text-align: center;
   clear: both;
+}
+
+@media screen and (max-width: 480px) {
+  /* 480px以下に適用されるCSS（スマホ用） */
+  img {
+    max-width: 100%;
+  }
+  footer .copy {
+    padding: 5%;
+  }
+  #footer_inner {
+    display: none;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

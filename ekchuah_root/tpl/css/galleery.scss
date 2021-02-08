@@ -1,0 +1,58 @@
+header{
+    clear: both;
+}
+#wrapper {
+    width: 70%;
+    margin-left: 15%;
+    color: #707070;
+    }
+h2{
+    padding: 0%;
+    margin-left: 2%;
+}
+img{
+    max-width: 100%;
+}
+p{
+
+    margin: 0%;
+    margin-bottom: 2%;
+    float:right;
+    
+
+}
+section{
+    clear: both;
+    text-align: center;
+}
+.img{
+    width: 50%;
+    float: left;
+    margin-bottom: -1%;
+}
+.img2{
+   width: 100%;
+   margin-bottom: -1%; 
+}
+
+footer{
+    margin-top: 10%;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    img {
+      max-width: 100%;
+    }
+    .img{
+        margin-bottom: -2.9%;
+        
+    }
+    .img2{
+        margin-bottom: -2.9%;
+    }
+        
+    
+
+}

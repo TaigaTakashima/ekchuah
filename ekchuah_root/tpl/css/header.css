@@ -9,8 +9,15 @@ header nav {
   z-index: 10000;
 }
 
+header nav div {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
 header nav h2 {
-  margin: -1.5% 0% 0 4%;
+  margin: 1.5% 0% 0 4%;
 }
 
 header nav ul {
@@ -39,5 +46,85 @@ header nav li a {
 
 header nav li span {
   font-size: 0.8em;
+}
+
+@media screen and (max-width: 480px) {
+  /* 480px以下に適用されるCSS（スマホ用） */
+  img {
+    max-width: 100%;
+  }
+  .menu {
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    z-index: 99;
+    position: fixed;
+  }
+  .menu__line {
+    background: #8F303B;
+    display: block;
+    height: 2px;
+    position: absolute;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+    width: 100%;
+  }
+  .menu__line--center {
+    top: 9px;
+  }
+  .menu__line--bottom {
+    bottom: 0;
+  }
+  .menu__line--top.active {
+    top: 8px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .menu__line--center.active {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  .menu__line--bottom.active {
+    bottom: 10px;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  /*gnav*/
+  .gnav {
+    background-image: url(../img/background_gnavi.png);
+    display: none;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 98;
+  }
+  .gnav__wrap {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    width: 100%;
+  }
+  .gnav__menu__item a {
+    font-size: 1.2em;
+    padding: 20px 40px;
+  }
+  header nav h2 {
+    display: none;
+  }
+  header nav li {
+    line-height: 1.5em;
+  }
 }
 /*# sourceMappingURL=header.css.map */

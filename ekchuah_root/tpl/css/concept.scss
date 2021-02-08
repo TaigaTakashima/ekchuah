@@ -1,0 +1,169 @@
+
+main{
+    color: #707070;
+
+    #firstview{
+        display: inline-block;
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        font-family: "Ro本明朝Pr5";
+        .firstview_title{
+            font-size: 1.8em;
+            writing-mode: vertical-rl;
+            display: inline-block;
+            margin: 0% 16% 28% 0%;
+        }
+
+        .firstview_title::before{
+            content: "";
+            position: absolute;
+            bottom: -7.5%;
+            left: 30%;
+            padding: 200px;
+            background-image: url(../img/pattern-2.png) ;
+            background-repeat: no-repeat;
+            z-index: -10000;
+        }
+        p{
+            font-size: 1em;
+            writing-mode: vertical-rl;
+            display: inline-block;
+            margin:6% 2% 8% 20%;
+            line-height: 2em;
+        }
+        img{
+            text-align: right;
+            display: inline-block;
+            // float: right;
+        }
+
+    }
+
+    #contents {
+        display:inline-flex;
+        position: relative;
+        p{
+            width: 50%;
+            margin: 0 auto;
+            display: table-cell;
+            vertical-align: middle;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            display: table-cell;
+            display: flex;
+        }
+    }
+
+    .back ::after{
+        content: "";
+        position: absolute;
+        bottom: -30%;
+        left: 30%;
+        padding: 200px;
+        background-image: url(../img/pattern_-1.png) ;
+        background-repeat: no-repeat;
+        z-index: -10000;
+
+}
+
+}
+
+
+
+@media screen and (max-width:480px) {
+    img{
+        max-width: 100%;
+    }
+    main{
+        #firstview{
+            margin-bottom: 10%;
+            .firstview_title{
+                text-align: right;
+                width: 100%;
+                margin: 15% 0 0 0;
+            }
+            .firstview_title::before{
+                background-image: none;
+            }
+            .firstview_title::after{
+                content: "ヨーロッパで古くから愛され親しまれている";
+                font-size: 0.7em;
+                position: absolute;
+                top: 10%;
+                right: 15%;
+
+            }
+            p{
+                writing-mode: unset;
+                -webkit-writing-mode:unset;
+                margin: 0 auto;
+                width: 90%;
+                padding: 0 5%;
+                line-height: 1.7em;
+                position: absolute;
+                bottom: 0%;
+            }
+            img {
+                width: 260px;
+                height: 489px;
+                -o-object-fit: cover;
+                object-fit: cover;
+                position: absolute;
+                left: 0px;
+                top: 5%;
+                z-index: 0;
+            }
+        }
+        #contents{
+            display: block;
+            p{
+                width: 100%;
+            }
+
+            .txt{
+                margin: 10% ;
+                width: 85%;
+            }
+            .txt:first-child::after{
+                content: "";
+                position: absolute;
+                top: -100%;
+                bottom: 0%;
+                left: auto;
+                right: 0%;
+                padding: 12px 121px;
+                background-image: url(../img/pattern-2.png) ;
+                background-repeat: no-repeat;
+                z-index: -10000;
+            }
+        }
+        #contents:nth-child(3){
+            display: flex;
+            flex-wrap:wrap;
+            img{
+                order: 1;
+                width: 80%;
+                background-image: url(../img/pattern_-1.png);
+                padding: 10% 10% 0 0;
+            }
+            .txt{
+                order: 2;
+            }
+        }
+    }
+    .back ::after{
+        content: "";
+        position: absolute;
+        bottom: -30%;
+        left: 30%;
+        padding: 200px;
+        background-image: url(../img/pattern_-1.png) ;
+        background-repeat: no-repeat;
+        z-index: -10000;
+        display: none;
+    }
+}

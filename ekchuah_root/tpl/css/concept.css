@@ -1,0 +1,187 @@
+@charset "UTF-8";
+main {
+  color: #707070;
+}
+
+main #firstview {
+  display: inline-block;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  font-family: "Ro本明朝Pr5";
+}
+
+main #firstview .firstview_title {
+  font-size: 1.8em;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  display: inline-block;
+  margin: 0% 16% 28% 0%;
+}
+
+main #firstview .firstview_title::before {
+  content: "";
+  position: absolute;
+  bottom: -7.5%;
+  left: 30%;
+  padding: 200px;
+  background-image: url(../img/pattern-2.png);
+  background-repeat: no-repeat;
+  z-index: -10000;
+}
+
+main #firstview p {
+  font-size: 1em;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  display: inline-block;
+  margin: 6% 2% 8% 20%;
+  line-height: 2em;
+}
+
+main #firstview img {
+  text-align: right;
+  display: inline-block;
+}
+
+main #contents {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+}
+
+main #contents p {
+  width: 50%;
+  margin: 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #contents img {
+  display: table-cell;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .back ::after {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  left: 30%;
+  padding: 200px;
+  background-image: url(../img/pattern_-1.png);
+  background-repeat: no-repeat;
+  z-index: -10000;
+}
+
+@media screen and (max-width: 480px) {
+  img {
+    max-width: 100%;
+  }
+  main #firstview {
+    margin-bottom: 10%;
+  }
+  main #firstview .firstview_title {
+    text-align: right;
+    width: 100%;
+    margin: 15% 0 0 0;
+  }
+  main #firstview .firstview_title::before {
+    background-image: none;
+  }
+  main #firstview .firstview_title::after {
+    content: "ヨーロッパで古くから愛され親しまれている";
+    font-size: 0.7em;
+    position: absolute;
+    top: 10%;
+    right: 15%;
+  }
+  main #firstview p {
+    -ms-writing-mode: unset;
+        writing-mode: unset;
+    -webkit-writing-mode: unset;
+    margin: 0 auto;
+    width: 90%;
+    padding: 0 5%;
+    line-height: 1.7em;
+    position: absolute;
+    bottom: 0%;
+  }
+  main #firstview img {
+    width: 260px;
+    height: 489px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    left: 0px;
+    top: 5%;
+    z-index: 0;
+  }
+  main #contents {
+    display: block;
+  }
+  main #contents p {
+    width: 100%;
+  }
+  main #contents .txt {
+    margin: 10%;
+    width: 85%;
+  }
+  main #contents .txt:first-child::after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    bottom: 0%;
+    left: auto;
+    right: 0%;
+    padding: 12px 121px;
+    background-image: url(../img/pattern-2.png);
+    background-repeat: no-repeat;
+    z-index: -10000;
+  }
+  main #contents:nth-child(3) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main #contents:nth-child(3) img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 80%;
+    background-image: url(../img/pattern_-1.png);
+    padding: 10% 10% 0 0;
+  }
+  main #contents:nth-child(3) .txt {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .back ::after {
+    content: "";
+    position: absolute;
+    bottom: -30%;
+    left: 30%;
+    padding: 200px;
+    background-image: url(../img/pattern_-1.png);
+    background-repeat: no-repeat;
+    z-index: -10000;
+    display: none;
+  }
+}
+/*# sourceMappingURL=concept.css.map */

@@ -24,6 +24,7 @@
                     <li><?php echo $_SESSION['menu_price'];?></li>
                     <li><?php echo $_SESSION['category_name'];?></li>
                     <li><?php echo $_SESSION['endDate'];?></li>
+                    <li><a href="menu_list.php"><button class="btn-gray" type="button">戻る</button></a></li>
                 </ul>
             </section>
         </main>

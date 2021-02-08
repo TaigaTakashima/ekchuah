@@ -22,25 +22,30 @@
             <table>
                 <tr>
                     <th>商品名</th>
-                    <td><input type="text" name="menu_name"></td>
+                    <td><input type="text" name="menu_name" value="<?php echo $menu_name;?>"></td>
                 </tr>
                 <tr>
                     <th>価格</th>
-                    <td><input type="text" name="menu_price"></td>
+                    <td><input type="text" name="menu_price" value="<?php echo $menu_price;?>"></td>
                 </tr>
                 <tr>
                     <th>カテゴリー</th>
                     <td>
                         <select name="category">
-                            <?php foreach($category_list as $category): ?>
-                            <option value="<?php echo $category["category_id"]?>"><?php echo $category["category_name"]?></option>
+                        <option disabled selected value>未選択</option>
+                            <?php foreach($category_list as $item): ?>
+                                <?php if($item["category_id"] == $category):?>
+                                    <option value="<?php echo $item["category_id"]?>" selected><?php echo $item["category_name"];?></option>
+                                <?php else:?>
+                                    <option value="<?php echo $item["category_id"]?>"><?php echo $item["category_name"];?></option>
+                            <?php endif;?>
                             <?php endforeach; ?>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <th>終了日</th>
-                    <td><input type="date" name="endDate"></td>
+                    <td><input type="date" name="endDate" value="<?php echo $endDate;?>"></td>
                 </tr>
                 <tr>
                     <th>画像</th>
