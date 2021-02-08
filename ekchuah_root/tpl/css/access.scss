@@ -1,9 +1,5 @@
 #wrapper{
-   color: #707070;
-}
-h2{
-   margin: 5%; 
-   
+    color: #707070;
 }
 img{
     max-width: 100%;
@@ -11,166 +7,98 @@ img{
 p{
     margin-bottom: 2%;
 }
-.spver{
-    display: none;
-}
-section{
-    
-    float: left;
-    margin: 5%;
-    p{
-        margin-top: -14%;
-        margin-bottom: 10%;
+#access-sec01{
+    width: 70%;
+    margin: 0 auto;
+    padding: 5%;
+    h2{
+        font-size: 2em;
+        font-family: serif;
     }
 }
-ul{
-    margin-bottom: 8%;
-}
-.mess{
-    display: none;
-}
-.map{
-    clear: both;
-    margin-bottom: 5%;
-    text-align: center;
-    img{
-        height: 69%; 
+#access-sec02{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    .access-sec02-item02{
+        padding: 1%;
+        ul{
+            margin: 5% 0;
+        }
+        div{
+            height: 100%;
+        }
     }
 
 }
-.maps{
-    display: none;
+
+.map{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    text-align: center;
+    display: flex;
+    width: 70%;
+    img{
+        width: 50%;
+    }
 }
-.spboxl{
-    display: none;
-}
-.boxl{
-  float: left; 
-   
-}
-.spboxr{
-    display: none;
-}
-.boxr{
-    float: left;
-}
-.boxsl{
-    display: none;
-}
-.boxsr{
-    display: none;
-}
-div{
-    clear: both;
-}
+
 
 @media screen and (max-width: 480px) {
     img {
       max-width: 100%;
     }
     h2{
-        font-size: 150%;
+        font-size: 1.3em;
     }
 
-    .mess{
-        padding-left: 5%;
-        padding-right: 10%;
-        display: block;
-        font-size: 85%;
-        line-height: 200%;
-    }
-    .mesp{
-        display: none;
-    }
     #wrapper{
         width: 100%;
-        
+    }
+    #access-sec01{
+        width: 90%;
+        margin-top: 80px;
+        h2{
+            font-size: 1.3em;
+        }
+        p{
+            font-size: 0.8em;
+        }
     }
     .map{
-        display: none;
-    }
-    .maps{
+        width: 90%;
         display: block;
-        clear: both;
-        overflow: hidden; 
-         
-        
-    }
-    .con{
-        height: 50%;
-        
-    }
-    .spver{
-        display: block;
-        font-size: 80%;
-        text-align: center;
-        padding-top: 10%;
-        padding-bottom: 2%;
-        
-        
-    }
-    section{
-        font-size: 90%;
-        float: left;
-        margin: 0%;
-        width: 55%;
-        .ul{
-            height: 10%;
+        background-color: rebeccapurple;
+        img{
+            width: 100%;
+            background-color: rebeccapurple;
         }
-        
-        .pcver{
+        iframe{
+            height: 300px;
+        }
+    }
+    
+    #access-sec02{
+        .access-sec02-item{
             display: none;
         }
-        
-
-        
-        p{
-            margin-bottom: 10%; 
-            margin-top: 10%; 
+        .access-sec02-item02{
+            //width: 10%;
         }
-        
-
-    }  
-    .del{
-        display: none;
-        padding-bottom: 5%;
-    } 
-    .adrs{
-        padding-bottom: 5%;
-    }
-    
-    .boxl{
-        display: none;
-    }
-    .spboxl{
-        display: block;
-        width: 15%;
-        float: left;
-        img{
-            height: 100%;
+        &::before{
+            content:"";
+            background: url('../img/pattern-2.png') repeat;
+            height: 500px;
+            width: 50px;
         }
-        
-        
-
-        
-        
-        
-    }
-    .boxr{
-        display: none;
-    }
-    .spboxr{
-        display: block;
-        float: right;
-        width: 25%;
-        img{
-            height: 100%;
-            width:100%;
+        &::after{
+            content:"";
+            background: url('../img/pattern-2.png') repeat;
+            height: 500px;
+            width: 50px;
         }
-        
-        
-
     }
-    
 
-} 
+
+}

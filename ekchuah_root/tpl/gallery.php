@@ -32,35 +32,51 @@
         </nav>
     </header>
 
-    <h2>ギャラリー</h2>
-    <p>日本家屋の落ち着いた雰囲気の中、<br>
-        ゆっくりとチョコレートを楽しんでいただけます。</p>
-    <section>    
-    <ul>
-        <li class="img"><img src="tpl/img/gallery_01.png" alt=""></li>
-        <li class="img"><img src="tpl/img/gallery_02.png" alt=""></li>    
+    <section id="gallery-sec">
+        <h2>ギャラリー</h2>
+        <p class="gallery-catch">
+            日本家屋の落ち着いた雰囲気の中、<br>
+            ゆっくりとチョコレートを楽しんでいただけます。
+        </p>
+        <ul>
+            <li class="img"><img src="tpl/img/gallery_01.png" alt=""></li>
+            <li class="img"><img src="tpl/img/gallery_02.png" alt=""></li>
+            <li class="img"><img src="tpl/img/gallery_03.png" alt=""></li>
+            <li class="img"><img src="tpl/img/gallery_04.png" alt=""></li>
+        </ul>
+            <p class="img2"><img src="tpl/img/gallery_05.png" alt=""></p>
+        <ul>
+            <li class="img"><img src="tpl/img/gallery_06.png" alt=""></li>
+            <li class="img"><img src="tpl/img/gallery_07.png" alt=""></li>
 
-        <li class="img"><img src="tpl/img/gallery_03.png" alt=""></li>
-        <li class="img"><img src="tpl/img/gallery_04.png" alt=""></li>
-    
-        <li class="img2"><img src="tpl/img/gallery_05.png" alt=""></li>
-    
-        <li class="img"><img src="tpl/img/gallery_06.png" alt=""></li>
-        <li class="img"><img src="tpl/img/gallery_07.png" alt=""></li>
-    
-        <li class="img"><img src="tpl/img/gallery_08.png" alt=""></li>
-        <li class="img"><img src="tpl/img/gallery_09.png" alt=""></li>
-    
-        <li class="img2"><img src="tpl/img/gallery_10.png" alt=""></li>   
-    </ul>
+            <li class="img"><img src="tpl/img/gallery_08.png" alt=""></li>
+            <li class="img"><img src="tpl/img/gallery_09.png" alt=""></li>
+        </ul>
+            <p class="img2"><img src="tpl/img/gallery_10.png" alt=""></p>
+        </ul>
     </section>
 
     <footer>
-        <div>
-            &copy;2020 Ek Chuah, All Rights Reserved.
-        </div>
-
-</footer>
+        <h2 id="footer_inner"><img src="tpl/img/logo_footer.png" alt="エクチュアのロゴ"></h2>
+        <section>
+            <address id="footer_inner">
+                〒542-0012<br>
+                大阪市中央区谷町6-17-43　練−LEN- <br>
+                06-4304-8077
+            </address>
+            <div id="footer_inner">
+                平日<br>
+                11：00～22：00（L.O 21：30）<br>
+                日・祝日<br>
+                11：00～21：00（L.O 20：30）<br>
+                定休日<br>
+                水曜日
+            </div>
+            <div class="copy">
+                &copy;2020 Ek Chuah, All Rights Reserved.
+            </div>
+        </section>
+    </footer>
 </div>
 </body>
 </html>
