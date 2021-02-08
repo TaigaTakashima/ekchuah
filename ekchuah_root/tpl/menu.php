@@ -48,7 +48,7 @@
             <ul>
                 <?php foreach ($menu_list as $item):?>
                 <li>
-                    <img src="tpl/img/menu_-1.png" alt="">
+                    <img src="../ekchuah_cms/menu/images/<?php echo $item['menu_id'];?>.jpg" alt="<?php echo $item['menu_name'];?>">
                     <p><?php echo $item['menu_name'];?></p>
                     <p><?php echo $item['price'];?></p>
                 </li>

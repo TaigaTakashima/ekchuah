@@ -133,6 +133,15 @@ main h2 {
   padding: 20px 0;
 }
 
+/*ニュース内容改行*/
+.news_table {
+  white-space: pre-wrap;
+}
+
+.news_table {
+  white-space: pre-wrap;
+}
+
 #form {
   padding-top: 30px;
   margin: 0 auto;

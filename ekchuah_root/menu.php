@@ -8,7 +8,7 @@ mysqli_set_charset($link, 'utf8');
 
 //selectにカテゴリーを表示
 
-$sql="SELECT * FROM menu WHERE display = 1";
+$sql="SELECT * FROM menu WHERE display = 0";
 $ret = mysqli_query($link, $sql);
 while ($row = mysqli_fetch_assoc($ret)) {
     $menu_list[] = $row;
