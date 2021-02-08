@@ -30,14 +30,20 @@ if($_SESSION['display'] == 0){
 }
 
 //カテゴリーの情報を変数に格納
+$category_list=[];
 $sql="SELECT * FROM category WHERE category_id = $category_id";
 $ret = mysqli_query($link, $sql);
 while ($row = mysqli_fetch_assoc($ret)) {
     $category_list[] = $row;
 }
-foreach($category_list as $item){
-    $_SESSION['category'] = $item['category_name'];
+if($category_list == null){
+    $_SESSION['category'] = "未選択";
+}else{
+    foreach($category_list as $item){
+        $_SESSION['category'] = $item['category_name'];
+    }
 }
+
 
 require_once './tpl/menu_delete_confirmation.php';
 ?>
