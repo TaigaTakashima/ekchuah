@@ -19,7 +19,7 @@
         </a>
         <nav class="gnav">
             <div class="gnav__wrap">
-                <h2 ><a href="./index.html"><img src="tpl/img/logo_gnavi.png" alt="エクチュアのロゴ"></a></h2>
+                <h2><a href="./index.html"><img src="tpl/img/logo_gnavi.png" alt="エクチュアのロゴ"></a></h2>
                 <ul class="gnav__menu">
                     <li class="gnav__menu__item"><a href="./index.php">ホーム<br><span>Home</span></a></li>
                     <li class="gnav__menu__item"><a href="./concept.php">コンセプト<br><span>Concept</span></a></li>
