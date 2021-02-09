@@ -27,7 +27,7 @@
                         </tr>
                         <tr>
                             <th>内容</th>
-                            <td><?php echo $_SESSION['content'];?></td>
+                            <td class="content"><?php echo $_SESSION['content'];?></td>
                         </tr>
                         <tr>
                             <td><input type="Submit" value="登録"></td>

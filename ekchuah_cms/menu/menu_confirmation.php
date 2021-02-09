@@ -13,6 +13,7 @@ $_SESSION['endDate'] = $_POST['endDate'];
 
 //画像の保存・画像名を最新のnews_idにするため
 //news_idの取得・変数に格納
+$_SESSION['menu_id']=0;
 $link = mysqli_connect('localhost', 'root', '', 'ekchuah');
 mysqli_set_charset($link, 'utf8');
 $sql = "SELECT menu_id FROM menu ORDER BY menu_id DESC LIMIT 1";

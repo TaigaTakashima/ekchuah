@@ -11,7 +11,7 @@ $link = mysqli_connect('localhost', 'root', '', 'ekchuah');
 mysqli_set_charset($link, 'utf8');
 //メニュー登録
 if (isset($_SESSION['menu_name'])) {
-    $sql = "INSERT INTO menu(menu_name,category_id,price,end_date) VALUES ('$menu_name',$category,$menu_price,'$endDate')";
+    $sql = "INSERT INTO menu(menu_name,category_id,price,end_date) VALUES ('$menu_name',$category,'$menu_price','$endDate')";
     mysqli_query($link, $sql);
     mysqli_close($link);
 }else{

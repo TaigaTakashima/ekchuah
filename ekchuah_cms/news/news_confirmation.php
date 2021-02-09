@@ -6,6 +6,7 @@ $_SESSION['content'] = $_POST['content'];
 
 
 //news_idの取得・変数に格納
+$_SESSION['news_id']=0;
 $link = mysqli_connect('localhost', 'root', '', 'ekchuah');
 mysqli_set_charset($link, 'utf8');
 $sql = "SELECT news_id FROM news ORDER BY news_id DESC LIMIT 1";
