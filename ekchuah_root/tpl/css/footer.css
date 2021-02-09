@@ -22,6 +22,7 @@ footer .copy {
     max-width: 100%;
   }
   footer .copy {
+    font-size: 0.8em;
     padding: 5%;
   }
   #footer_inner {

@@ -9,7 +9,7 @@ while ($row = mysqli_fetch_assoc($ret)) {
     $menu_list[] = $row;
 }
 
-//カテゴリーの情報を変巣に格納
+//カテゴリーの情報を変数に格納
 $sql="SELECT * FROM category";
 $ret = mysqli_query($link, $sql);
 while ($row = mysqli_fetch_assoc($ret)) {
