@@ -31,8 +31,8 @@
             <a href="news.php" class="prev">戻る<img src="tpl/img/news_prev_icon.png" alt=""></a>
             <?php foreach ($news_list as $item):?>
             <h3><?php echo $item['title'];?></h3>
+            <img src="../ekchuah_cms/news/images/<?php echo $item['news_id'];?>.jpg" alt="<?php echo $item['title'];?>" class="sam">
             <?php endforeach;?>
-            <img src="tpl/img/menu_firstview.png" alt="チョコミントパフェ" class="sam">
         </section>
         <section id="sentence">
             <?php foreach ($news_list as $item):?>
