@@ -10,6 +10,7 @@
     <!-- <link rel="stylesheet" href="css/index.css"> -->
     <link rel="stylesheet" href="tpl/css/news.css">
     <link rel="stylesheet" href="tpl/css/footer.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     <script src="tpl/js/jQuery-3.4.1.min.js"></script>
     <title>Ek Chuah　エクチュア からほり「蔵」本店</title>
 </head>
@@ -24,7 +25,7 @@
         </a>
         <nav class="gnav">
             <div class="gnav__wrap">
-                <h2 ><a href="./index.html"><img src="tpl/img/logo_gnavi.png" alt="エクチュアのロゴ"></a></h2>
+                <h2 ><a href="./index.php"><img src="tpl/img/logo_gnavi.png" alt="エクチュアのロゴ"></a></h2>
                 <ul class="gnav__menu">
                     <li class="gnav__menu__item"><a href="./index.php">ホーム<br><span>Home</span></a></li>
                     <li class="gnav__menu__item"><a href="./concept.php">コンセプト<br><span>Concept</span></a></li>
@@ -40,7 +41,7 @@
         <h3>お知らせ</h3>
         <ul>
             <?php foreach ($news_list as $item):?>
-            <li><a href="detail.php?news_id=<?php echo $item['news_id']?>"><?php echo $item['title'];?><img src="tpl/img/details_icon.png" alt="詳しく見る"></a></li>
+            <li><a href="./detail.php?news_id=<?php echo $item['news_id']?>"><?php echo $item['title'];?><img src="tpl/img/details_icon.png" alt="詳しく見る"></a></li>
             <?php endforeach;?>
         </ul>
     </main>

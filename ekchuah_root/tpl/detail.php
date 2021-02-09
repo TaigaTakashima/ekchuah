@@ -14,16 +14,25 @@
 </head>
 <body>
     <header>
-        <nav>
-            <h2 ><a href="./index.html"><img src="tpl/img/logo_gnavi.png" alt="エクチュアのロゴ"></a></h2>
-            <ul class="gnav__menu">
-                <li class="gnav__menu__item"><a href="./index.php">ホーム<br><span>Home</span></a></li>
-                <li class="gnav__menu__item"><a href="./concept.php">コンセプト<br><span>Concept</span></a></li>
-                <li class="gnav__menu__item"><a href="./news.php">ニュース<br><span>News</span></a></li>
-                <li class="gnav__menu__item"><a href="./menu.php">メニュー<br><span>Menu</span></a></li>
-                <li class="gnav__menu__item"><a href="./gallery.php">ギャラリー<br><span>Gallery</span></a></li>
-                <li class="gnav__menu__item"><a href="./access.php">アクセス<br><span>Access</span></a></li>
-            </ul>
+        <section id="first-view">
+        </section>
+        <a class="menu">
+            <span class="menu__line menu__line--top"></span>
+            <span class="menu__line menu__line--center"></span>
+            <span class="menu__line menu__line--bottom"></span>
+        </a>
+        <nav class="gnav">
+            <div class="gnav__wrap">
+                <h2 ><a href="./index.php"><img src="tpl/img/logo_gnavi.png" alt="エクチュアのロゴ"></a></h2>
+                <ul class="gnav__menu">
+                    <li class="gnav__menu__item"><a href="./index.php">ホーム<br><span>Home</span></a></li>
+                    <li class="gnav__menu__item"><a href="./concept.php">コンセプト<br><span>Concept</span></a></li>
+                    <li class="gnav__menu__item"><a href="./news.php">ニュース<br><span>News</span></a></li>
+                    <li class="gnav__menu__item"><a href="./menu.php">メニュー<br><span>Menu</span></a></li>
+                    <li class="gnav__menu__item"><a href="./gallery.php">ギャラリー<br><span>Gallery</span></a></li>
+                    <li class="gnav__menu__item"><a href="./access.php">アクセス<br><span>Access</span></a></li>
+                </ul>
+            </div><!--gnav-wrap-->
         </nav>
     </header>
     <main>
