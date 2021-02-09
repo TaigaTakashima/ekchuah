@@ -11,8 +11,10 @@ while ($row = mysqli_fetch_assoc($ret)) {
 }
 foreach($menu_display as $item){
     if($item['end_date'] < date("Y-m-d")){
-        $sql="UPDATE `menu` SET display=1 WHERE menu_id = ".$item['menu_id'].";";
-        $ret = mysqli_query($link, $sql);
+        if($item['end_date'] != "0000-00-00"){
+            $sql="UPDATE `menu` SET display=1 WHERE menu_id = ".$item['menu_id'].";";
+            $ret = mysqli_query($link, $sql);
+        }
     }
 }
 
