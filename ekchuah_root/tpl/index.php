@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="tpl/css/reset.css">
     <link rel="stylesheet" href="tpl/css/header.css">
     <link rel="stylesheet" href="tpl/css/index.css">
+    <link rel="stylesheet" href="tpl/css/header.css">
     <link rel="stylesheet" href="tpl/css/footer.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     <script src="tpl/js/jQuery-3.4.1.min.js"></script>

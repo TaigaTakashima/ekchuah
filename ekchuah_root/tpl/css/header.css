@@ -2,7 +2,8 @@
 header nav {
   background: url(../img/background_gnavi.png);
   width: 100%;
-  height: 15%;
+  height: 100px;
+  line-height: 100px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -11,23 +12,26 @@ header nav {
 
 header nav div {
   width: 100%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-header nav h2 {
-  margin: 1.5% 0% 0 4%;
+header nav div h2 img {
+  display: block;
+  max-width: 100%;
 }
 
-header nav ul {
+header nav div ul {
   width: 100%;
   text-align: center;
-  margin-top: 2.5%;
   line-height: 1em;
 }
 
-header nav li {
+header nav div li {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -39,12 +43,12 @@ header nav li {
   margin: 0 4%;
 }
 
-header nav li a {
+header nav div li a {
   color: #fff;
   font-family: "Ro本明朝Pr5";
 }
 
-header nav li span {
+header nav div li span {
   font-size: 0.8em;
 }
 
