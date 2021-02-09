@@ -13,7 +13,7 @@
 #gallery-sec h2 {
   font-size: 2em;
   font-family: serif;
-  margin: 5%;
+  padding: 5%;
   margin-left: 2%;
 }
 
@@ -61,7 +61,7 @@
 @media screen and (max-width: 480px) {
   #gallery-sec {
     width: 98%;
-    margin-top: 100px;
+    padding-top: 100px;
   }
   #gallery-sec h2 {
     font-size: 1.5em;
