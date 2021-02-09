@@ -18,14 +18,24 @@ main{
         font-family: "Ro本明朝Pr5";
     }
     li{
-        border-top: 1px solid #707070;
+        border-bottom: #707070 1px solid;
+        display: block;
         font-size: 1.2em;
-        padding: 3%;
-        padding-bottom: 8%;
         width: 100%;
         img{
             float: right;
         }
+        a{
+            display: block;
+            padding: 3%;
+            padding-bottom: 5%;
+            &:hover{
+                transition-duration: 0.3s;
+                background-color: #707070;
+                color: white;
+            }
+        }
+
     }
 }
 
@@ -42,9 +52,21 @@ main{
             margin: 5%;
         }
         li{
-            padding: 10% 0%;
-            width: auto;
-            margin: 0 5%;
+            margin: 0 auto;
+            margin-bottom: 10%;
+            font-size: .8em;
+            width: 90%;
+            overflow: hidden;
+            a{
+                box-sizing: border-box;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                img{
+                    width: 5%;
+                }
+            }
 
         }
     }

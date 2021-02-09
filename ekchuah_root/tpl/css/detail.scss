@@ -38,3 +38,39 @@ main{
     }
 
 }
+
+@media screen and (max-width: 480px) {
+    main{
+        #firstview{
+            display: block;
+            width: 95%;
+            margin: 0 auto;
+            margin-top: 100px;
+            height: auto;
+            h3{
+                box-sizing: border-box;
+                padding: 5%;
+                writing-mode: unset;
+                font-size: 1.2em;
+                margin-top: 0;
+                width: 100%;
+            }
+            .prev{
+                display: block;
+                position: static;
+            }
+            .sam{
+                display: none;
+                float: none;
+            }
+        }
+        #sentence{
+            width: 95%;
+            margin: 15% auto;
+            line-height: 2em;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    }
+
+}

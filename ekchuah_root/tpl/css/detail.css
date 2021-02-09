@@ -43,4 +43,40 @@ main #sentence {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+
+@media screen and (max-width: 480px) {
+  main #firstview {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 100px;
+    height: auto;
+  }
+  main #firstview h3 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 5%;
+    -webkit-writing-mode: unset;
+        -ms-writing-mode: unset;
+            writing-mode: unset;
+    font-size: 1.2em;
+    margin-top: 0;
+    width: 100%;
+  }
+  main #firstview .prev {
+    display: block;
+    position: static;
+  }
+  main #firstview .sam {
+    display: none;
+    float: none;
+  }
+  main #sentence {
+    width: 95%;
+    margin: 15% auto;
+    line-height: 2em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+}
 /*# sourceMappingURL=detail.css.map */
