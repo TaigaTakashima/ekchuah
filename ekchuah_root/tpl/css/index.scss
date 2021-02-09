@@ -262,7 +262,12 @@ loopSlider
             width: 100%;
             text-align: center;
             background: url(../img/background_gnavi.png);
-            padding: 4% 0;
+            a{
+                display: block;
+                img{
+                    width: 40%;
+                }
+            }
 
         }
         .gnav{
@@ -286,17 +291,12 @@ loopSlider
         }
 
         .hero img {
-            position: absolute;
-            top: 0;
-            left: -72%;
-            width: auto;
-            height: auto;
-            min-width: 100%;
-            min-height: 100%;
-            max-width: inherit;
+            position: static;
+            height: 100vh;
             object-fit: cover; /* この一行を追加するだけ！ */
 
         }
+
     }
 
 
