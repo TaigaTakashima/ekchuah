@@ -19,7 +19,7 @@
         <section id="first-view">
             <h1><img src="tpl/img/title_text.png" alt="Ek Chuah Chocolatia"></h1>
             <p class="hero"><img src="tpl/img/home_firstview.png" alt="チョコレートケーキ"></p>
-            <h2 class="logo_bottom"><a href="tpl/index.php"><img src="tpl/img/logo_gnavi.png" alt="エクチュアのロゴ"></a></h2>
+            <h2 class="logo_bottom"><a href="./index.php"><img src="tpl/img/logo_gnavi.png" alt="エクチュアのロゴ"></a></h2>
         </section>
         <a class="menu">
             <span class="menu__line menu__line--top"></span>
@@ -28,7 +28,7 @@
         </a>
         <nav class="gnav">
             <div class="gnav__wrap">
-                <h2 ><a href="./index.html"><img src="tpl/img/logo_gnavi.png" alt="エクチュアのロゴ"></a></h2>
+                <h2 ><a href="./index.php"><img src="tpl/img/logo_gnavi.png" alt="エクチュアのロゴ"></a></h2>
                 <ul class="gnav__menu">
                     <li class="gnav__menu__item"><a href="./index.php">ホーム<br><span>Home</span></a></li>
                     <li class="gnav__menu__item"><a href="./concept.php">コンセプト<br><span>Concept</span></a></li>
@@ -50,7 +50,7 @@
                     ゆっくりとチョコレートを楽しんでいただけます。
                 </p>
                 <div class="container">
-                    <a href="#" class="btn-open">More</a>
+                    <a href="./concept.php" class="btn-open">More</a>
                 </div><!-- /container -->
                 </div><!--/txt-->
         </section><!--/concept-->
@@ -65,7 +65,7 @@
                     お待ちしております。
                 </p>
                 <div class="container">
-                    <a href="menu.html" class="btn-open">More</a>
+                    <a href="./menu.php" class="btn-open">More</a>
                 </div><!-- /container -->
             </div><!--/txt-->
         </section><!--/menu-->
@@ -78,7 +78,7 @@
                     歴史ある大阪の暮らしを現在に色濃く残しています。
                 </p>
                 <div class="container">
-                    <a href="#" class="btn-open">More</a>
+                    <a href="./gallery.php" class="btn-open">More</a>
                 </div><!-- /container -->
             </div><!--/txt-->
             <p class="right"><img src="tpl/img/gallery00.png" alt=""></p>
@@ -108,7 +108,7 @@
                     敷地内の「蔵」にあたる部分で営業しています。
                 </p>
                 <div class="container">
-                    <a href="#" class="btn-open">More</a>
+                    <a href="./access.php" class="btn-open">More</a>
                 </div><!-- /container -->
             </div><!--/txt-->
     </section><!--access-->
