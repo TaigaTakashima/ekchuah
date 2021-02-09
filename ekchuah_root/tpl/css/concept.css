@@ -1,4 +1,10 @@
 @charset "UTF-8";
+nav {
+  height: 90%;
+  width: 100%;
+  position: fixed;
+}
+
 main {
   color: #707070;
 }

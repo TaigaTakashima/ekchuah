@@ -260,7 +260,12 @@ main .container .btn-open:active:after {
     width: 100%;
     text-align: center;
     background: url(../img/background_gnavi.png);
-    padding: 4% 0;
+  }
+  header .logo_bottom a {
+    display: block;
+  }
+  header .logo_bottom a img {
+    width: 40%;
   }
   header .gnav {
     display: none;
@@ -276,14 +281,8 @@ main .container .btn-open:active:after {
     height: 100vh;
   }
   header .hero img {
-    position: absolute;
-    top: 0;
-    left: -72%;
-    width: auto;
-    height: auto;
-    min-width: 100%;
-    min-height: 100%;
-    max-width: inherit;
+    position: static;
+    height: 100vh;
     -o-object-fit: cover;
        object-fit: cover;
     /* この一行を追加するだけ！ */
