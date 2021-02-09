@@ -45,9 +45,7 @@
         </section>
         <section id="sentence">
             <?php foreach ($news_list as $item):?>
-            <p>
-                <?php echo $item['content'];?>
-            </p>
+            <p><?php echo $item['content'];?></p>
             <?php endforeach;?>
         </section>
 
